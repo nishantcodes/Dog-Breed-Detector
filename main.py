@@ -196,13 +196,13 @@ head_html = """
 </head>
 <body>
     <nav class="#304ffe brown accent-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Contact me 👨‍💻</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Contact me</a>
         </div>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             
-            <h3 class="header center brown-text">🐶 Dog Breed Guesser 📸</h3>  
+            <h2 class="header center brown-text">🐶 Dog Breed Guesser 📸</h2>  
 """
 
 def get_html_table(image_paths, names, column_labels):
