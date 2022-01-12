@@ -194,7 +194,7 @@ head_html = """
 </head>
 <body>
     <nav class="#304ffe brown accent-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Nishant👨‍💻</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Built By Nishant👨‍💻</a>
         </div>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
