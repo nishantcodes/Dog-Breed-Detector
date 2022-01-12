@@ -138,7 +138,7 @@ async def create_upload_files(files: List[UploadFile] = File(...)):
 
     table_html = get_html_table(image_paths, class_predictions, column_labels)
 
-    content = head_html + '<h4 class="center header col s12 #bdbdbd red-text lighten-1"> Here Are Our Predictions.</h4>'+ str(table_html) + """
+    content = head_html + '<h5 class="center header col s12 #bdbdbd red-text lighten-1"> Here Are Our Predictions.</h5>'+ str(table_html) + """
     <br><form method = "post" action="/">
     <div class = "row center">
     <button type="submit" class="btn waves-effect waves-light green">Home</button>
@@ -153,11 +153,11 @@ async def create_upload_files(files: List[UploadFile] = File(...)):
 async def main():
     content = head_html+"""
     <div class="row center">
-        <h5 class="header col s12 #bdbdbd grey-text lighten-1">How often do you see a doggo and wanted to know it's breed. If this is the case, you are just 1 click away. These are not absolutely correct results, Our testing has shown '95%' accuracy.  
+        <h6 class="header col s12 #bdbdbd grey-text lighten-1">How often do you see a doggo and wanted to know it's breed. If this is the case, you are just 1 click away. These are not absolutely correct results, Our testing has shown '95%' accuracy.  
              <br>
-        </h5>
+        </h6>
     </div>
-    <h4 class="center header col s12 #bdbdbd red-text lighten-1"> Please upload your Dog Pictures below.
+    <h5 class="center header col s12 #bdbdbd red-text lighten-1"> Please upload your Dog Pictures below.</h5>
     <h6 class="center header col s12 #bdbdbd grey-text lighten-1"> We'll try to predict your doggo's breed like these:
     <br><br>
     """
@@ -196,13 +196,13 @@ head_html = """
 </head>
 <body>
     <nav class="#304ffe brown accent-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Built By Nishant👨‍💻</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">Contact me 👨‍💻</a>
         </div>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-            <br><br>
-            <h1 class="header center brown-text">🐶 Dog Breed Guesser 📸</h1>  
+            
+            <h3 class="header center brown-text">🐶 Dog Breed Guesser 📸</h3>  
 """
 
 def get_html_table(image_paths, names, column_labels):
@@ -211,7 +211,7 @@ def get_html_table(image_paths, names, column_labels):
         s+= '<tr><th><div class="center"><h5 class="header col s12 #bdbdbd grey-text lighten-1">' + column_labels[0] + '</h5></div></th><th><div class="center"><h5 class="header col s12 #bdbdbd grey-text lighten-1">' + column_labels[1] + '</h5></div></th></tr>'
     
     for name, image_path in zip(names, image_paths):
-        s += '<tr><td><div class="center"><img height="120" src="/' + image_path + '"></div></td>'
+        s += '<tr><td><div class="center"><img height="100" src="/' + image_path + '"></div></td>'
         s += '<td><div class="center"><h6>' + name + '</h6></div></td></tr>'
     s+='</table>'
 
